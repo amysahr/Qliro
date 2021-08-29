@@ -1,0 +1,44 @@
+.PaginationWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 64px;
+
+    button {
+        margin-left: 40px;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.pageNavigation{
+    background-color: transparent;
+}
+
+.activeNavigation{
+    @extend .pageNavigation;
+    color: #0A8F73;
+}
+
+.deactiveNavigation{
+    @extend .pageNavigation;
+    color: #999999;
+}
+
+.pageNumber{
+    width: 40px;
+    height: 40px;
+}
+
+.activePageNumber{
+    @extend .pageNumber;
+    border-radius: 50%;
+    color: white;
+    background-color: #0A8F73;
+}
+
+.deactivePageNumber{
+    @extend .pageNumber;
+    background-color: transparent;
+}

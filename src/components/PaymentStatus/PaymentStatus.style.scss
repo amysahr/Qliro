@@ -1,0 +1,22 @@
+.paymentStatus {
+  content: "\2022";
+  font-size: 14pt;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.failed::before {
+  @extend .paymentStatus;
+  color: #fe1b1b;
+}
+
+.inprogress::before {
+  @extend .paymentStatus;
+  color: #f16500;
+}
+
+.paid::before {
+  @extend .paymentStatus;
+  color: #64e1c3;
+}

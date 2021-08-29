@@ -1,0 +1,13 @@
+.orderHeaderWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #999999;
+    margin-bottom: 24px;
+
+    div{
+        width: 128px;
+        height: 28px;
+    }
+}

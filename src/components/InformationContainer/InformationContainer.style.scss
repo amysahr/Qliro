@@ -1,0 +1,30 @@
+.infoWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.informationColumn{
+    width: 186px;
+}
+
+.informationHeader{
+    @extend .informationColumn;
+    font-weight: 600;
+    height: 24px;
+    width: auto;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+.informationWrapper{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.informationDetail{
+    @extend .informationColumn;
+    height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
